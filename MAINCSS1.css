@@ -1,0 +1,346 @@
+header {
+    background-color: #ffffff;
+    padding : 20px
+    
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    flex: 0 0 200px;
+    padding-left: 70px;
+}
+
+header img {
+    max-width: 100%;
+}
+
+header nav {
+    flex: 1;
+    padding-right: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+
+header nav ul li {
+    margin-left: 15px;
+}
+
+header nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.text-block {
+    background: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+    padding: 25px;
+    color:white;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    font-stretch: extra-expanded;
+    width : 100%;
+  }
+  @keyframes bg-animation {
+    0% { background-position: left; }
+    100% { background-position: right; }
+  }
+  .text-block {
+    animation: bg-animation 5s linear infinite;
+    background-size: 400% 100%;
+  }
+  
+  .vmo {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.INFOWRAP {
+    padding: 10px 0;
+    max-width: 350px;
+}
+ ::after, ::before {
+    box-sizing: border-box;
+}
+.title {
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+}
+.description{
+    font-family: Poppins,sans-serif;
+}
+.INFODIV {
+    border: .1px solid #707070;
+    opacity: .26;
+}
+.ContactUsContainer {
+    background-color: #ecf1ed;
+    margin-top: 80px;
+}
+.ContactFormContainer {
+    margin: 20px;
+}
+.MainTitle {
+    padding: 10px 0;
+    max-width: 365px;
+}
+.MainTitle {
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+form {
+    padding: 20px 0 0;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+.inputbox {
+    position: relative;
+    height: 40px;
+    border-bottom: 1px solid #222647;
+    margin-bottom: 40px;
+    font-size: 14px;
+    font-family: Poppins,sans-serif;
+    color: #222647;
+}
+.inputbox label {
+    position: absolute;
+    top : -20px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+label {
+    font-family: Montserrat,sans-serif;
+    padding-left: 5px;
+    color: #000;
+    font-weight: 600;
+}
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+.inputbox input:focus::-webkit-input-placeholder {
+    color:transparent;
+}
+.inputbox input:focus + label {
+    color: #000;
+}
+
+.Btn4 {
+    background-color: #000;
+    color: #fff;
+    max-width: 150px;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none!important;
+    font-family: Montserrat,sans-serif;
+    font-weight: 600;
+    border-radius: 50px;
+}
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearence: button;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.FooterContainer {
+    align-items: center;
+    padding: 30px;
+}
+.FooterContainer {
+    display: flex;
+    background-color: #000;
+    padding: 80px 150px 10px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 200;
+    font-family: Montserrat,sans-serif;
+    
+}.FooterCollection {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: left;
+    display : flex;
+}
+.Flogo {
+    display: flex;
+    margin: auto;
+    padding-left: 20px;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.Fintro {
+    padding: 40px;
+}
+.Fintro {
+    max-width: 350px;
+}
+ul {
+    list-style-type: none;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.FmenuTitle {
+    font-weight: 600;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.PNcontainer {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.MainTitle {
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+.ProgramContainer {
+    display: flex;
+    width: 700px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.InfoWrapper {
+    padding: 10px 0;
+}
+.InfoWrapper {
+    max-width: 350px;
+}
+.InfoTitle {
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+}
+.InfoDescription {
+    font-family: Poppins,sans-serif;
+}
+.Btn2 {
+    border: 2px solid #000;
+    color: #000;
+    max-width: 130px;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50px;
+}
+.AboutDescriptionContainer, .AboutDescriptionContainer2 {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.AboutDescriptionContainer , .AboutDescriptionContainer2{
+    margin: 160px auto auto;
+}
+.MainTitle {
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+.LongDescription {
+    padding: 20px 0 0;
+    text-align: center;
+    font-family: Poppins,sans-serif;
+} 
+#board-of-directors {
+    text-align: center;
+  }
+  
+  #board-of-directors h2 {
+    margin-bottom: 20px;
+  }
+  
+  #board-of-directors ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #board-of-directors ul li {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  #board-of-directors ul li img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .ValmikiImage {
+    display: flex;
+    margin: auto;
+    height: 500px;
+    vertical-align: middle;
+    border-style: none;
+}
+#head-of-department h2 {
+    text-align: center;
+}
+#head-of-department ul li {
+    display: inline-block; 
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+#head-of-department ul li img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#head-of-department ul li:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+#head-of-department ul li:nth-child(3n+4) {
+    clear: left;
+}
+
