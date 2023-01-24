@@ -1,0 +1,939 @@
+body {
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #89CC59;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.MainTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/* css for NavBar */
+
+.NavContainer {
+    box-shadow: 0px 3px 22px #00000033;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+}
+
+.MenuElements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 20px 0px 20px 150px;
+}
+
+.MenuOption {
+    display: flex;
+    align-items: center;
+    padding-right: 150px;
+}
+
+.Menuli {
+    padding-left: 20px;
+    color: black;
+}
+
+.Btn1 {
+    background-color: black;
+    color: #ffffff;
+    margin: 20px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    /* animation: blinker 1s step-start infinite; */
+}
+
+@-webkit-keyframes blinker {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* for slider */
+
+.DesktopSliderContainer {
+    margin-top: 110px;
+}
+
+.MobileSliderContainer {
+    margin-top: 90px;
+}
+
+/* css for college moto */
+
+.MotoContainer {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 15px 0px 12px 0px;
+    background-color: aqua;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    background-image: linear-gradient( -225deg, #9DCBED 0%, #F7DE42 29%, #89CC59 67%, #9DCBED 100%);
+    background-size: 200% auto;
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent;  */
+    -webkit-animation: textclip 3s linear infinite;
+    animation: textclip 3s linear infinite;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 1px 1px #0000004b;
+}
+
+@-webkit-keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* css for mission vison section */
+
+.VContainer {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.InfoWrapper {
+    max-width: 350px;
+}
+
+.InfoTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.InfoDescription {
+    font-family: 'Poppins', sans-serif;
+}
+
+.InfoDivider {
+    border: 0.1px solid #707070;
+    opacity: 0.26;
+}
+
+/* css for program and notices */
+
+.MainPNContainer {
+    background-color: #ECF1ED;
+    padding: 40px 150px 40px 150px;
+    margin-top: 60px;
+}
+
+.PNcontainer {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ProgramContainer {
+    display: flex;
+    width: 700px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.InfoWrapper {
+    padding: 10px 0px 10px 0px;
+}
+
+.NoticeContainer {
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.Noticewrrapper {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    justify-content: left;
+}
+
+.Noticewrrapper:hover {
+    cursor: pointer;
+    color: blue
+}
+
+.NoticeBullet {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #89CC59;
+    margin-right: 10px;
+}
+
+.NoticeTitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 0px 0px 0px 5px;
+    max-width: 300px;
+    min-width: 300px;
+    margin-right: 30px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.Notice {
+    padding-left: 25px;
+}
+
+.NoticeDate {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Btn2 {
+    border: 2px solid black;
+    background-color: none;
+    color: black;
+    max-width: 130px;
+    padding: 8px 20px 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+/* message css */
+
+.MsgContainer1 {
+    margin-top: 80px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-color: #89CC59;
+}
+
+.MsgInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.MsgNameHolder {
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+.MsgTitle {
+    padding-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.MsgDescription {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.MsgImage {
+    width: 30%;
+    height: auto;
+}
+
+.Btn3 {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0px 3px 6px #00000029;
+    max-width: 130px;
+    padding: 8px 10px 8px 20px;
+    margin-top: 20px;
+    border-radius: 50px;
+    text-decoration: none !important;
+}
+
+.MsgContainer2 {
+    margin-top: 80px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-color: #9DCBED;
+}
+
+.MsgContainer3 {
+    margin-top: 80px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-color: #F7DE42;
+}
+
+/* SingleMessage */
+
+.SingleStaffMsg {
+    margin-top: 80px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.IntroImage {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.SingleMsgDescription {
+    max-width: 900px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.SingleMsgLongDescription {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.SingleMsgTitle {
+    max-width: 800px;
+    padding-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.singleIntro {
+    display: flex;
+    flex-direction: column;
+}
+
+.SingleMsgImage {
+    margin-left: 40px;
+    margin-top: 30px;
+    Max-width: 700px;
+    max-height: 300px;
+    padding-bottom: 30px;
+}
+
+.singleMsgdivider {
+    border-top: 1px solid #bbb;
+    margin-top: 30px;
+}
+
+/* contact  us form */
+
+.ContactUsContainer {
+    background-color: #ECF1ED;
+    margin-top: 80px;
+}
+
+.ContactFormContainer {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px 0px 30px 0px;
+}
+
+.inputbox {
+    position: relative;
+    height: 40px;
+    border-bottom: 1px solid #222647;
+    margin-bottom: 40px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #222647;
+}
+
+.inputbox input {
+    height: 90%;
+    width: 100%;
+    padding-top: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+.inputbox label {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+form {
+    padding: 20px 0px 0px 0px;
+}
+
+.Btn4 {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    max-width: 150px;
+    padding: 8px 20px 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.Btn4:hover {
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+/* footer css */
+
+.FooterContainer {
+    display: flex;
+    background-color: #000000;
+    padding: 80px 150px 10px 150px;
+    color: white;
+    font-weight: 200;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+}
+
+.FooterCollection {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Fintro {
+    max-width: 350px;
+    padding: 10px 0px 0px 0px;
+}
+
+.FmenuTitle {
+    font-weight: 600;
+}
+
+.FooterCopyright {
+    color: #89CC59;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+/* AboutUs Page */
+
+.AboutDescriptionContainer {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutDescriptionContainer2 {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.LongDescription {
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.TakshalaImage {
+    display: flex;
+    margin: auto;
+    height: 500px;
+}
+
+/* bodcontainer */
+
+.BodContainer {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.BodCollection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.BodItem {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 15px 30px 15px;
+   
+}
+
+.BodName {
+    font-family: 'Montserrat', sans-serif;
+    color: #89CC59;
+    font-weight: 800;
+}
+
+.BodPosition {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 1px;
+    text-transform: uppercase;
+}
+
+.BodExp {
+    font-family: 'Poppins', sans-serif;
+}
+
+.programContainer {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.ProgramBoxContainer {
+    margin-top: 40px;
+    display: flex;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ProgramItems {
+    max-width: 270px;
+    margin: 10px 30px 20px 10px;
+}
+
+.ProggramImage {
+    height: 250px;
+    margin-bottom: 5px;
+}
+
+.Programtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: #89CC59;
+    font-weight: 800;
+    padding-left: 10px;
+}
+
+.ProgramInfo {
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 0px 5px 10px;
+}
+
+.LearnMoreCTA {
+    font-family: 'Montserrat', sans-serif;
+    color: #89CC59;
+    font-weight: 600;
+    padding: 0px 0px 0px 10px;
+}
+
+/* AdmissionPage */
+
+.AdmissionContainer {
+    background-color: #ECF1ED;
+    padding: 60px;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 60px;
+}
+
+.formcontainer {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.AdmissionIputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 5px;
+    color: #000000;
+    font-weight: 600;
+}
+
+input {
+    margin: 8px 0px 5px 0px;
+    padding: 10px;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+select {
+    margin: 8px 0px 5px 0px;
+    padding: 10px;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-input-placeholder {
+    font-weight: 600;
+}
+
+:-ms-input-placeholder {
+    font-weight: 600;
+}
+
+::placeholder {
+    font-weight: 600;
+}
+
+.FormSubmit {
+    background-color: #89CC59;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffffff;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.FormSubmit:hover {
+    background-color: #ffffff;
+    border: 2px solid #89CC59;
+    color: #89CC59;
+}
+
+/* noticesPage */
+
+.NoticeWrapper {
+    max-width: 500px;
+}
+
+.noticePageContainer {
+    display: flex;
+    max-width: 1200px;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+
+.NoticeImageActive {
+    padding: 30px 0px 0px 5px;
+    height: 520px;
+}
+
+.ActiveNoticeWrapper {
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+/* DetailPage */
+
+.DetailContainer {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 60px;
+}
+
+.imagescroll {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+.DetailImage {
+    max-height: 300px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.DetailPageDescription {
+    padding: 20px 0px 0px 0px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    /* max-width: 800px; */
+}
+
+.DetailPageDescription2 {
+    text-align: justify;
+    padding: 20px 0px 0px 0px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+
+.DetailIntroContainer {
+    display: flex;
+}
+
+.DetailIntro {
+    display: flex;
+    flex-direction: column;
+}
+
+.DetailTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.stream {
+    display: flex;
+    grid-gap: 60px;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.RegBg {
+    background-color: #ECF1ED;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* media query */
+
+@media only screen and (min-width: 825px) {
+    /* For desktop: */
+    .MobileSliderContainer {
+        display: none;
+    }
+    .subjectSlider {
+        display: none;
+    }
+    .RegBg {
+        display: none;
+    }
+}
+
+/* mobile */
+
+@media only screen and (max-width: 825px) {
+    /* DetailPage */
+    .DetailIntroContainer {
+        display: flex;
+        flex-direction: column !important;
+    }
+    .DetailContainer {
+        margin: 30px;
+        margin-top: 150px;
+        margin-bottom: 60px;
+    }
+    /* ImageSlider */
+    .imagescroll {
+        display: none;
+    }
+    /* navbar */
+    .NavContainer {
+        min-height: 90px !important;
+        padding-top: 23px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .MenuOption {
+        display: none;
+    }
+    .logo {
+        display: flex;
+        align-items: flex-start;
+        padding: 0px;
+        width: 18rem;
+        /* height: 5rem; */
+    }
+    .MotoContainer {
+        font-size: 15px;
+    }
+    .VContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    /* slider */
+    .DesktopSliderContainer {
+        display: none;
+    }
+    /* programs&Notice */
+    .MainPNContainer,
+    .PNcontainer,
+    .ProgramContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 0%;
+        width: auto;
+    }
+    .Notice {
+        margin-top: 50px;
+    }
+    .NoticeBullet {
+        display: none;
+    }
+    .Noticewrrapper {
+        flex-wrap: wrap;
+    }
+    .NoticeTitle {
+        min-width: -webkit-fit-content;
+        min-width: -moz-fit-content;
+        min-width: fit-content;
+        padding-left: 0px;
+    }
+    .Btn2 {
+        margin: auto;
+        justify-content: center;
+    }
+    /* message from principle */
+    .MsgContainer1,
+    .MsgContainer2,
+    .MsgContainer3,
+    .MsgContainer4 {
+        flex-wrap: wrap;
+    }
+    .MsgImage {
+        margin: auto;
+        width: 90%;
+    }
+    .MsgDescription {
+        height: 100px;
+        overflow: hidden;
+    }
+    /* contact us form */
+    .ContactFormContainer {
+        margin: 20px;
+    }
+    /* footer section  */
+    .Flogo {
+        display: flex;
+        margin: auto;
+        padding-left: 20px;
+    }
+    .FooterContainer {
+        align-items: center;
+        padding: 30px;
+    }
+    .Fintro {
+        padding: 40px;
+    }
+    .FooterCollection {
+        width: 100vw;
+        flex-wrap: wrap;
+        padding: 0%;
+        justify-content: left;
+    }
+    .FooterCopyright {
+        text-align: center;
+        padding: 0%;
+        margin: 0%;
+    }
+    /* about us page */
+    .MainTitle {
+        padding: 10px 0px 10px 0px;
+        max-width: 365px;
+    }
+    .TakshalaImage {
+        max-width: 90%;
+        max-height: 10%;
+    }
+    .LongDescription {
+        padding: 0px 20px 0px 20px;
+        text-align: justify;
+    }
+    /* Apply Now page */
+    .AdmissionContainer {
+        padding: 60px 0px 30px 6px;
+        
+    }
+    .formcontainer {
+        margin: 10px;
+        padding: 10px;
+    }
+    .AdmissionIputBox {
+        margin-left: 2px;
+        margin-bottom: 2px;
+    }
+    /* notces pages */
+    .noticePageContainer {
+        flex-wrap: wrap-reverse;
+    }
+    .ActiveNoticeWrapper {
+        margin: 0px;
+        padding: 0px;
+    }
+    .NoticeImageActive {
+        max-width: 90vw;
+    }
+}
